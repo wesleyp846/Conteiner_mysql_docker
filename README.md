@@ -45,7 +45,10 @@ A ideia surgiu da necessidade de ter uma solução consistente e `fácil de impl
     ```bash
     docker pull mysql:latest
     ```
-    
+    > Demonstração no terminal
+
+![Demonstração no terminal do camando para baixar a imagem](https://github.com/wesleyp846/Conteiner_mysql_docker/blob/main/primeiroComando.png)
+
 2. **Rodar o contêiner com variáveis de ambiente**
     
     Em seguida, execute o `contêiner` configurando as `variáveis de ambiente` para definir o usuário, senha, pasta de persistência, entre outras. Use o comando abaixo, ajustando os valores conforme necessário:
@@ -63,62 +66,82 @@ A ideia surgiu da necessidade de ter uma solução consistente e `fácil de impl
     ```html
     docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=root -v "/home/wesley/Área de Trabalho/alura_mysql":/var/lib/mysql mysql:latest
     ```
-    
+   
+    > Demonstração no terminal
+
+![Demonstração no terminal do camando para montar o contêiner](https://github.com/wesleyp846/Conteiner_mysql_docker/blob/main/segundoComando.png)
+  
     Em um `segundo terminal ou aba`, para listar os contêiner’s rodando e revelar seu `id’s`
     
-    ```html
+    
     docker ps
-    ```
     
-    O contêiner de nome escolhido na variável  `--name my-mysql-container`, aparecerá aqui.
+O contêiner de nome escolhido na variável  `--name my-mysql-container`, aparecerá aqui.
     
-    caso contrário o contêiner pode ter sido `interrompido`. substitua o ultimo comando por 
+> Demonstração no terminal
+
+![Demonstração no terminal do camando para listar o contêiner](https://github.com/wesleyp846/Conteiner_mysql_docker/blob/main/terceiroComando.png)
+
+caso contrário o contêiner pode ter sido `interrompido`. substitua o ultimo comando por 
     
-    ```html
+    
     docker ps -a  
-    ```
     
-    Com o `id` do contêiner, execute
     
-    ```html
+Com o `id` do contêiner, execute
+    
+    
     docker exec -it 5121702520bc bash
-    ```
     
-    Onde `-it` é opção para o modo interativo e `bash` para acessar o terminal do contêiner
     
-    Por fim 
+Onde `-it` é opção para o modo interativo e `bash` para acessar o terminal do contêiner
+
+Por fim 
     
-    ```html
     mysql -uroot -p
-    ```
+       
+Onde -u`root` é o usuário root, `-p` para digitar a senha.
     
-    Onde -u`root` é o usuário root, `-p` para digitar a senha.
-    
+> Demonstração no terminal
+
+![Demonstração no terminal da execução do contêiner](https://github.com/wesleyp846/Conteiner_mysql_docker/blob/main/ultimaTela.png)
+
+<br>
 
 ## Versão Atual: 1
 
 Na versão 1, a aplicação foi `finalizada`, `Dockerizada` e `entregue`.
+
+<br>
 
 > Pré-requisitos
 > 
 - Acesso à `WEB`.
 - `Doker`
 
+<br>
+
 > Tecnologias Utilizadas
 > 
 
 [Docker](https://www.docker.com/): Usado na conteinerização da aplicação como um todo.
+
+<br>
 
 > Funcionalidades
 > 
 1. A aplicação permite a `criação e gerenciamento de bancos de dados`.
 2. `Compatível` com todos os SO com o Docker instalado.
 
+<br>
+
 ### Contribuição
 
 > Licença
 MIT
 > 
+
+<br>
 
 > Créditos
 > 
