@@ -152,6 +152,6 @@ Fique à vontade para contribuir e adicionar melhorias ao código.
 
 Para mais informações, visite o `LinkedIn` de [Wesley Pereira](https://www.linkedin.com/in/wesleyp846).
 
-Visite também o`GitHub`de [Wesley Pereira](https://www.linkedin.com/in/wesleyp846).
+Visite também o`GitHub`de [Wesley Pereira](https://github.com/wesleyp846).
 
 Primeiro commit na data de 16/08/2024
